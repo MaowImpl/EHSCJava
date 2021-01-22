@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Computer id="myNode" name="My Node" ip="127.0.0.1" icon="laptop" type="2">
+    <Account password="adminPass" type="ADMIN"/>
+    <Ports forCrack="1">
+        <Port id="22" remap="2"/>
+    </Ports>
+</Computer>
