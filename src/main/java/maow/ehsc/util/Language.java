@@ -1,32 +1,23 @@
 package maow.ehsc.util;
 
 public enum Language {
-    ENGLISH("English", "en-us"),
-    GERMAN("German", "de-de")
+    ENGLISH("en-us"),
+    GERMAN("de-de"),
+    FRENCH("fr-be"),
+    RUSSIAN("ru-ru"),
+    SPANISH("es-ar"),
+    KOREAN("ko-kr"),
+    JAPANESE("ja-jp"),
+    CHINESE("zh-cn"),
     ;
 
-    private final String name;
-    private final String id;
+    private final String code;
 
-    Language(String name, String id) {
-        this.name = name;
-        this.id = id;
+    Language(String code) {
+        this.code = code;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public static Language fromName(String name) {
-        for (Language language : values()) {
-            if (language.getName().equals(name)) {
-                return language;
-            }
-        }
-        return ENGLISH;
+    public String getCode() {
+        return code;
     }
 }

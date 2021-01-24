@@ -5,22 +5,20 @@
   <WorkshopLanguage>en-us</WorkshopLanguage>
   <Name>My Extension</Name>
   <AllowSaves>true</AllowSaves>
-  <StartingVisibleNodes>myComp,myComp2</StartingVisibleNodes>
+  <VisibleStartingNodes>myComp,myComp2</VisibleStartingNodes>
   <StartingMission>Missions/StartingMission.xml</StartingMission>
   <StartingActions>Actions/StartingActions.xml</StartingActions>
-  <StartingFaction>Themes/StartingTheme.xml</StartingFaction>
   <Description>Test extension info file.</Description>
   <WorkshopDescription>Workshop description.</WorkshopDescription>
+  <Faction>Factions/Faction1.xml</Faction>
+  <Faction>Factions/Faction2.xml</Faction>
   <StartsWithTutorial>false</StartsWithTutorial>
-  <HasIntroStartup>true</HasIntroStartup>
+  <StartingTheme>Themes/StartingTheme.xml</StartingTheme>
   <SequencerTargetID>sequencerTarget</SequencerTargetID>
   <SequencerSpinUpTime>10.0</SequencerSpinUpTime>
   <SequencerFlagRequiredForStart>sequencerFlag</SequencerFlagRequiredForStart>
   <ActionsToRunOnSequencerStart>Actions/SequencerActions.xml</ActionsToRunOnSequencerStart>
   <WorkshopVisibility>0</WorkshopVisibility>
   <WorkshopTags>Extension,Labyrinths</WorkshopTags>
-  <WorkshopPreviewImagePath>WorkshopLogo.png</WorkshopPreviewImagePath>
-  <WorkshopPublishID>NONE</WorkshopPublishID>
-  <Faction>Factions/Faction1.xml</Faction>
-  <Faction>Factions/Faction2.xml</Faction>
+  <WorkshopPreviewImagePath>NONE</WorkshopPreviewImagePath>
 </HacknetExtension>

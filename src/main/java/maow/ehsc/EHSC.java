@@ -3,8 +3,8 @@ package maow.ehsc;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import maow.ehsc.util.xml.wrapper.ElementWrapper;
-import maow.ehsc.util.xml.TypeRegistry;
+import maow.ehsc.util.DocumentUtils;
+import maow.ehsc.xml.convert.ConverterFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
@@ -51,14 +51,15 @@ public class EHSC {
         final SAXReader sr = new SAXReader();
         try {
             final Document document = sr.read(path.toFile());
-            final ElementWrapper root = ElementWrapper.root(document);
-            TypeRegistry.processType(root, path);
+            ConverterFactory
+                    .convert(document)
+                    .ifPresent(converted -> DocumentUtils.writeDocument(converted, path));
         } catch (DocumentException e) {
             e.printStackTrace();
         }
     }
 
-    private static void log(String msg) {
+    public static void log(String msg) {
         final String full = "[EHSC] " + msg;
         System.out.println(full);
     }
