@@ -1,7 +1,7 @@
-package maow.ehsc.xml.convert;
+package maow.ehsc.xml.converter;
 
 import maow.ehsc.EHSC;
-import maow.ehsc.xml.convert.types.*;
+import maow.ehsc.xml.converter.types.*;
 import org.dom4j.Document;
 import org.dom4j.Element;
 

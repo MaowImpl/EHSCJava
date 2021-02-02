@@ -4,7 +4,7 @@ import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import maow.ehsc.util.DocumentUtils;
-import maow.ehsc.xml.convert.ConverterFactory;
+import maow.ehsc.xml.converter.ConverterFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
